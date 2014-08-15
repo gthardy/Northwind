@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Northwind">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="Description" content="Northwind Sample using AngularJS, NodeJS and MongoDB">
+	<meta name="fragment" content="!" />
+	<title>Northwind</title>
+	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="libs/toastr/toastr.css" />
+	<link rel="stylesheet" src="css/site.css" />
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="northwind-navbar"></button>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<a class="navbar-brand" href="/">Northwind</a>
+			</div>
+			<div class="collapse navbar-collapse" id="northwind-navbar">
+				<ul class="nav navbar-nav">
+					<li><a href="/customers">Customers</a></li>
+					<li><a href="/orders">Orders</a></li>
+					<li><a href="/products">Products</a></li>
+					<li><a href="/suppliers">Suppliers</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</nav>
+	
+	<div class="container">
+	  	<div class="view-container">
+	    	<div ng-view class="view-frame"></div>
+	  	</div>
+	</div>
+	
+	<script type="text/javascript" src="libs/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="libs/angular/angular.js"></script>
+	<script type="text/javascript" src="libs/angular-route/angular-route.js"></script>
+	<script type="text/javascript" src="libs/bootstrap/dist/js/bootstrap.js"></script>
+	<script type="text/javascript" src="libs/toastr/toastr.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="controllers/main-controller.js"></script>
+	<script type="text/javascript" src="controllers/customer-controller.js"></script>	
+	<script type="text/javascript" src="controllers/order-controller.js"></script>
+	<script type="text/javascript" src="controllers/product-controller.js"></script>
+	<script type="text/javascript" src="controllers/supplier-controller.js"></script>
+</body>
+</html>

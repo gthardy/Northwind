@@ -1,0 +1,26 @@
+<div class="page-header" ng-controller="customerController">
+	<h1>{{ Title }}</h1>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>Company</th>
+					<th>Address</th>
+					<th>Contact</th>
+					<th>Phone</th>
+				</tr>
+			</thead>
+			<tbody ng-repeat="customer in customers">
+				<tr>
+					<td><a href="#" ng-click="open(customer.CustomerID)" >{{ customer.CompanyName }}</a></td>
+					<td>{{ customer.Address + ' ' + customer.City + ' ' + customer.Country + ' ' + customer.PostalCode}}</td>
+					<td>{{ customer.ContactName + ' (' + customer.ContactTitle + ')' }}</td>
+					<td>{{ customer.Phone }}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+

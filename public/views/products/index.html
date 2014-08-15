@@ -1,0 +1,24 @@
+<div class="page-header" ng-controller="productController">
+	<h1>{{ Title }}</h1>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>Product Name</th>
+					<th>Quantity Per Unit</th>
+					<th>Unit Price</th>
+					<th>Units In Stock</th>
+				</tr>
+			</thead>
+			<tbody ng-repeat="product in products">
+				<tr>
+					<td><a href="#" ng-click="open(product.ProductID)" >{{ product.ProductName }}</a></td>
+					<td>{{ product.QuantityPerUnit }}</td>
+					<td>{{ product.UnitPrice }}</td>
+					<td>{{ product.UnitsInStock }}</td>
+			</tbody>
+		</table>
+	</div>
+</div>

@@ -1,0 +1,22 @@
+<div class="page-header" ng-controller="orderController">
+	<h1>{{ Title }}</h1>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>Ship Name</th>
+					<th>Ship Address</th>
+					<th>Ship Date</th>
+				</tr>
+			</thead>
+			<tbody ng-repeat="order in orders">
+				<tr>
+					<td><a href="#" ng-click="open(order.OrderID)" >{{ order.ShipName }}</a></td>
+					<td>{{ order.ShipAddress + ' ' + order.ShipCity + ' ' + order.ShipCountry + ' ' + order.ShipPostalCode}}</td>
+					<td>{{ order.ShippedDate }}</td>
+			</tbody>
+		</table>
+	</div>
+</div>
