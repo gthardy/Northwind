@@ -27,8 +27,6 @@ app.post('/api/order', order.add);
 app.put('/api/order/:id', order.update);
 app.delete('/api/order/:id', order.delete);
 
-
-
 // API Product
 app.get('/api/product', product.findAll);
 app.get('/api/product/:id', product.findById);
@@ -50,4 +48,4 @@ app.use(function(req, res){
 	res.sendfile(__dirname + '/public');
 })
 
-app.listen(8000);
+app.listen(process.env.port || 8000);
