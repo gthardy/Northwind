@@ -13,5 +13,4 @@ app.controller('customerController', function($scope, $http){
     		})
     };
 
-
 });
