@@ -48,4 +48,5 @@ app.use(function(req, res){
 	res.sendfile(__dirname + '/public');
 })
 
+//app.listen(8000);
 app.listen(process.env.port || 8000);

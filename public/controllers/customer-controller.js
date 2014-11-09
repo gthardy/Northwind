@@ -12,5 +12,4 @@ app.controller('customerController', function($scope, $http){
     			$scope.customer = data;
     		})
     };
-
 });
