@@ -24,3 +24,73 @@
 	</div>
 </div>
 
+<div class="modal fade" id="customerDetails">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">
+					<span aria-hidden="true">&times;</span>
+					<span class="sr-only">Close</span>
+				</button>
+				<h4 class="modal-title">{{ customer.CompanyName }}</h4>
+			</div>
+			<div class="modal-body">
+				<form class="form-horizontal" role="form">
+					<div class="form-group">
+						<label class="col-sm-4 control-label" for="companyName">Company Name</label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" id="companyName" placeholder="Enter company name" ng-model="customer.CompanyName">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-4 control-label" for="address">Address</label>
+						<div class="col-sm-8">
+						<input type="text" class="form-control" id="address" placeholder="Enter address" ng-model="customer.Address">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-4 control-label" for="city">City</label>
+						<div class="col-sm-8">
+						<input type="text" class="form-control" id="city" placeholder="Enter city" ng-model="customer.City">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-4 control-label" for="country">Country</label>
+						<div class="col-sm-8">
+						<input type="text" class="form-control" id="country" placeholder="Enter country" ng-model="customer.Country">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-4 control-label" for="postalcode">Postal Code</label>
+						<div class="col-sm-8">
+						<input type="text" class="form-control" id="postalcode" placeholder="Enter postal code" ng-model="customer.PostalCode">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-4 control-label" for="contactname">Contact Name</label>
+						<div class="col-sm-8">
+						<input type="text" class="form-control" id="contactname" placeholder="Enter contact name" ng-model="customer.ContactName">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="col-sm-4 control-label" for="contacttitle">Contact Title</label>
+						<div class="col-sm-8">
+						<input type="text" class="form-control" id="contacttitle" placeholder="Enter contact title" ng-model="customer.ContactTitle">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-4 control-label" for="phone">Phone</label>
+						<div class="col-sm-8">
+						<input type="text" class="form-control" id="phone" placeholder="Enter phone" ng-model="customer.Phone">
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save</button>
+			</div>
+		</div>
+	</div>
+</div>

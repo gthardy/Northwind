@@ -11,6 +11,8 @@ app.controller('orderController', function($scope, $http){
     	$http.get('/api/order/' + id)
     		.success(function(data, status, headers, config){
     			$scope.order = data;
+
+				$('#orderDetails').modal('show');
     		})
     };
 });

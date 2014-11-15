@@ -10,6 +10,8 @@ app.controller('customerController', function($scope, $http){
     	$http.get('/api/customer/' + id)
     		.success(function(data, status, headers, config){
     			$scope.customer = data;
+
+				$('#customerDetails').modal('show');
     		})
     };
 });
